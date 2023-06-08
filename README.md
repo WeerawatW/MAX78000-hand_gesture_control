@@ -80,7 +80,7 @@ $./quantize_Finger_Numbers.sh
 $./gen-finger_numbers.sh
 ```
 After the run is completed, you will get the generated file in the directory `sdk/Examples/MAX78000/CNN/finger_numbers`
-![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/135967943/fb9eb4e5-9764-4622-b64d-00f49ea4e188)
+![](generated%20c%20code.jpg)
 
 
 ## Deployment on board MAX78000EVkit
