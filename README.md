@@ -1,6 +1,10 @@
 # The MAX78000 hand gesture control
-
-* you can download  file for use training ai hand gesture control: https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/untagged-942b36396836df061b0d/project_file.zip. by this link.
+The main reference to the official warehouse of the board for training and deploying neural networks:`Github`
+* `ai8x-training` Repository for training neural networks on computers:
+https://github.com/MaximIntegratedAI/ai8x-training
+* `ai8x-synthesis` Repository, used to convert the trained model file into C code:
+https://github.com/MaximIntegratedAI/ai8x-synthesis
+you can download  file for use training ai hand gesture control: https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/untagged-942b36396836df061b0d/project_file.zip. by this link.
 ## ai8x-training
 Process datasets 
 
