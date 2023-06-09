@@ -15,6 +15,10 @@ https://github.com/Analog-Devices-MSDK/msdk
 * You can download  file for use training ai hand gesture control: https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/untagged-942b36396836df061b0d/project_file.zip. by this link.
 ## ai8x-training
 Process datasets 
+You can download only dataset here:
+
+https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/untagged-a50fbdb1ade3ade8cfe3/finger_numbers.zip
+
 
 After the download is complete, I organize the directory according to the following structure:
 >
