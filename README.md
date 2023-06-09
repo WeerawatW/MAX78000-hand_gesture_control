@@ -9,7 +9,7 @@ After the download is complete, I organize the directory according to the follow
 ```
 ai8x-training
  └─ data
-   └─ finger_number
+   └─ Finger_Numbers
              ├─ processed
              │    ├─ test_info.csv
              │    ├─ train_info.csv
