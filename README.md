@@ -8,6 +8,10 @@ https://github.com/MaximIntegratedAI/ai8x-training
 
 https://github.com/MaximIntegratedAI/ai8x-synthesis
 
+* `msdk` Warehouse, for writing microcontroller programs:
+
+https://github.com/Analog-Devices-MSDK/msdk
+
 * You can download  file for use training ai hand gesture control: https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/untagged-942b36396836df061b0d/project_file.zip. by this link.
 ## ai8x-training
 Process datasets 
