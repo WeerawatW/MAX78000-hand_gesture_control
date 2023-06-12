@@ -495,7 +495,6 @@ datasets = [
     {
         'name': 'Fingers_number',
         'input': (3, 74, 74),
-        #'output': (1,2),
         'output': (1, 2, 3, 4, 5, 6, 7),
         'loader': Fingers_74_get_datasets,
         'collate': Finger_Numbers.collate_fn
