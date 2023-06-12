@@ -216,6 +216,29 @@ For example, you might set "MAXIM_PATH":"C:/MaximSDK" on Windows, "MAXIM_PATH":"
 
 7. Save your changes to the file with CTRL + S and restart VS Code.
 
+## Building and Running a Project (VS Code)
+
+1. Launch Visual Studio Code.
+2. Select File -> Open Folder...
+ ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/26e85ffe-1a60-41a6-850a-50632452c1fb)
+
+3. Navigate to an example project for the target microcontroller in the Myproject folder and open it with Select Folder.
+
+![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/7d1f893e-f669-4584-825b-17bbc58f15f9)
+
+4. VS Code will prompt for trust the first time. Select Trust folder and enable all features.
+
+![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/46531372-367e-4517-8b08-35ab3e00fdb4)
+
+5. The opened project should look something like this.
+
+![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/825dd949-35eb-4d26-9166-1e5bf787f093)
+6. Set the Board Support Package to match your evaluation platform. In VS Code, this is done by editing the .vscode/settings.json file and setting the "board" project configuration option.
+
+See https://analog-devices-msdk.github.io/msdk/USERGUIDE/#board-support-packages for more details.
+
+![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/11061013-0817-4a1f-8b66-2568eee0d01c)
+
 
 
 ## Conclusion
