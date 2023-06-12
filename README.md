@@ -220,6 +220,7 @@ For example, you might set "MAXIM_PATH":"C:/MaximSDK" on Windows, "MAXIM_PATH":"
 
 1. Launch Visual Studio Code.
 2. Select File -> Open Folder...
+
  ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/26e85ffe-1a60-41a6-850a-50632452c1fb)
 
 3. Navigate to an example project for the target microcontroller in the Myproject folder and open it with Select Folder.
@@ -239,6 +240,39 @@ See https://analog-devices-msdk.github.io/msdk/USERGUIDE/#board-support-packages
 
 ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/11061013-0817-4a1f-8b66-2568eee0d01c)
 
+7. Save your changes to settings.json with CTRL+S.
+8. Reload the VS Code window. After changing any options in settings.json, a reload is necessary to force it to re-index VS Code's Intellisense engine.
+   VS Code can be conveniently reloaded with the Reload Window developer command accessed with CTRL + SHIFT + P (or COMMAND + SHIFT + P on MacOS).
+   
+![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/9a828a90-3a37-4156-8d75-2ea5dc900d8e)
+
+9. Press the shortcut Ctrl+Shift+B to open the available Build Tasks (alternatively navigate to Terminal -> Run Build task...).
+
+![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/e5c88b96-3e88-4a9e-8a87-622371ae240d)
+
+10. Run the "build" task to compile the project for the configured Target Microcontroller and BSP. Notice that the TARGET and BOARD Build Configuration Variables are set on the command line. The program binary is successfully compiled into the .elf program binary in the build sub-folder of the project.
+
+            ----------image--------
+11. Connect a debug adapter between the host PC and the evaluation platform. Detailed instructions on this hardware setup can be found in the evaluation platform's Datasheet and Quick-Start Guide, which are available on its https://www.analog.com/en/index.html product page.
+12. Run the flash build task. Running this task will automatically build the project if needed, flash the program binary, and halt the program execution to await a debugger connection.
+
+      ----------image--------
+13. Open the Run and Debug window (CTRL+SHIFT+D) and launch the debugger (F5).
+
+![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/e3483859-fc48-4351-9f87-28fd293e1acb)
+
+14. Verify the program counter enters main successfully.
+
+     ----------image--------
+     
+15. Press Continue (F5) to run the program.
+
+![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/1d5373c8-65a6-40e3-8839-b66c01078ab2)
+
+![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/980c31ab-982d-49c5-8f43-b9fe77cc7035)
+
+
+16. Exercise the debugger and press stop to disconnect when finished.
 
 
 ## Conclusion
