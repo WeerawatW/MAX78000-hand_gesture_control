@@ -10,7 +10,6 @@ To control TV with hands or fingers, we want to create AI. to make YouTube and s
 This project create for use hand or fingers to control TV instead remote.
 ### Project process
 The software part trains the neural network on the computer and deploys it to run on a single-chip microcomputer, using the CNN neural network accelerator built into the chip.
-![](MAX78000_Chip.jpg)
 
 The main reference to the official warehouse of the board for training and deploying neural networks:`Github`
 
@@ -26,7 +25,7 @@ https://github.com/MaximIntegratedAI/ai8x-synthesis
 
 https://github.com/Analog-Devices-MSDK/msdk
 
-* You can download  file for use training ai hand gesture control: https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/untagged-942b36396836df061b0d/project_file.zip. by this link.
+* You can download  file for use training ai hand gesture control: https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/untagged-942b36396836df061b0d/project_file.zip or https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/ProjectFile/project_file.zip
 ## ai8x-training
 Process datasets 
 You can download only dataset here:
