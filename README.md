@@ -99,14 +99,6 @@ ai8x-synthesis
    ├─ quantize_Finger_Numbers.sh
    └─ gen-finger_numbers.sh
 ```
-Place `finger_numbers.yaml` in directory according to the following structure.
-
-Dowload file here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/network/finger_numbers.yaml
-```
-ai8x-synthesis
-   └─ network
-       └─ finger_numbers.yaml
-```
 Place `sample_fingers_number.npy` in directory according to the following structure.
 
 Dowload file here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/tests/sample_fingers_number.npy
@@ -115,6 +107,16 @@ ai8x-synthesis
    └─ tests
        └─ sample_fingers_number.npy
 ```
+
+Place `finger_numbers.yaml` in directory according to the following structure.
+
+Dowload file here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/network/finger_numbers.yaml
+```
+ai8x-synthesis
+   └─ network
+       └─ finger_numbers.yaml
+```
+
 Type the following command:
 ```
 $deactivate
