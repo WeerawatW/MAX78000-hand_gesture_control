@@ -25,7 +25,8 @@ https://github.com/MaximIntegratedAI/ai8x-synthesis
 
 https://github.com/Analog-Devices-MSDK/msdk
 
-* You can download  file for use training ai hand gesture control: https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/untagged-942b36396836df061b0d/project_file.zip or https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/ProjectFile/project_file.zip
+* You can download our file for compare your result!: https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/untagged-942b36396836df061b0d/project_file.zip or https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/ProjectFile/project_file.zip
+* But you can dowload file step by step too!.
 ## ai8x-training
 Process datasets 
 You can download only dataset here:
