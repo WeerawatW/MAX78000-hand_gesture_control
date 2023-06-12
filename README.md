@@ -49,6 +49,7 @@ ai8x-training
              └─ train
 ```
 Place `finger_number.py` in dataset.
+Dowload file here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/6c95af2d96c45ef934c73e30a5c9bdb86bf1a01e/ai8x-training/datasets/finger_number.py
 ```
 ai8x-training
   └─ dataset
