@@ -64,6 +64,45 @@ Dowload file here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/bl
 ai8x-training
   └─ train_Fingers_Numbers.sh
 ``` 
+`python train.py --deterministic --print-freq 200  --epochs 100 --optimizer Adam --lr 0.001 --wd 0 --model ai85tinierssd --use-bias --momentum 0.9 --weight-decay 5e-4 --dataset Fingers_number --device MAX78000 --obj-detection --obj-detection-params parameters/obj_detection_params_svhn.yaml --batch-size 16 --qat-policy policies/qat_policy_svhn.yaml --validation-split 0 "$@"`
+
+The meaning of each parameter is as follows:
+
+--deterministic: Set the random number seed to produce repeatable training results
+
+--print-freq 200: In each epech, how many training samples are printed once
+
+--pr-curves: Display the precision-recall curves Display the precision-recall curve
+
+--epochs 100: the number of training times
+
+--optimizer Adam: optimizer
+
+--lr 0.001: learning rate learning rate
+
+--wd 0: weight decay
+
+--model ai85tinierssd: model selection, the model definition is in the models folder
+
+--use-bias: use bias
+
+--momentum 0.9: Momentum, a parameter of the Adam optimizer
+
+--weight-decay 5e-4: Weight decay to prevent overfitting
+
+--dataset cat: dataset name, previously defined in the dataset loading file
+
+--device MAX78000: MCU chip model
+
+--obj-detection: object detection
+
+--obj-detection-params: parameters/obj_detection_params_svhn.yaml target recognition training parameters
+
+--batch-size 16: The number of samples passed into the neural network each time
+
+--qat-policy policies/qat_policy_svhn.yaml: policy for quantization parameters
+
+--validation-split 0: Portion of training dataset to set aside for validation We have an independent validation set, no need to divide from the training set, here is set to 0
 Open terminal and type this command:
 ```
 $cd ai8x-training
