@@ -144,12 +144,14 @@ ai8x-synthesis
    ├─ quantize_Finger_Numbers.sh
    └─ gen-finger_numbers.sh
 ```
+
+The meaning of each parameter is as follows:
 | parameters | discript parameter |
 | ----------- | ----------------- |
 | test-dir sdk/Examples/MAX78000/CNN | save directory |
-| prefix cat | saved folder name |
-| checkpoint-file trained/ai85-svhn-tinierssd-qat8-q.pth.tar | quantization format file in STEP 3 |
-| config-file networks/cat.yaml | network configuration file |
+| prefix finger_numbers | saved folder name |
+| checkpoint-file trained/ai85-finger-numbers-qat8-q.pth.tar | quantization format file in STEP 3 |
+| networks/finger_numbers.yaml | network configuration file |
 | device MAX78000 | the chip model of the microcontroller |
 | compact-data | Use memcpy() to load input data to save code space (also enabled by default) |
 | mexpress | use express kernel loading (also enabled by default) |
