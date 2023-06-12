@@ -112,6 +112,7 @@ ai8x-synthesis
         └─ ai85-finger-numbers-qat8.pth.tar
 ```
 You will get `ai85-finger-numbers-qat8-q.pth.tar` after run script `quantize_Finger_Numbers.sh`
+`ai85-finger-numbers-qat8-q.pth.tar` use for generate c code.
 
 Place `sample_fingers_number.npy` in directory according to the following structure.
 
@@ -136,6 +137,26 @@ Dowload `quantize_Finger_Numbers.sh` here: https://github.com/WeerawatW/MAX78000
 
 Dowload `gen-finger_numbers.sh` here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/gen-finger_numbers.sh
 ```
+`python ai8xize.py --test-dir sdk/Examples/MAX78000/CNN --prefix finger_numbers --checkpoint-file trained/ai85-finger-numbers-qat8-q.pth.tar --config-file networks/finger_numbers.yaml --device MAX78000 --compact-data --mexpress --timer 0 --display-checkpoint --verbose --overlap-data --mlator --new-kernel-loader --overwrite --no-unload
+`
+| parameters | discript parameter |
+| ----------- | ----------------- |
+| test-dir sdk/Examples/MAX78000/CNN | save directory |
+| prefix cat | saved folder name |
+| checkpoint-file trained/ai85-svhn-tinierssd-qat8-q.pth.tar | quantization format file in STEP 3 |
+| config-file networks/cat.yaml | network configuration file |
+| device MAX78000 | the chip model of the microcontroller |
+| compact-data | Use memcpy() to load input data to save code space (also enabled by default) |
+| mexpress | use express kernel loading (also enabled by default) |
+| timer 0 | use timer to time the inference (default: off, supply timer number) Whether to use timer to record the running time of CNN |
+| display-checkpoint | show parsed checkpoint data |
+| verbose | verbose output |
+| overlap-data | allow output to override input |
+| mlator | Use hardware to swap output bytes |
+| new-kernel-loader | (also enabled by default) |
+| overwrite | overwrite target (if present) |
+| no-unload | disable cnn_unload() function |
+
 ai8x-synthesis
    ├─ quantize_Finger_Numbers.sh
    └─ gen-finger_numbers.sh
