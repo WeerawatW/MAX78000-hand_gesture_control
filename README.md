@@ -205,6 +205,7 @@ The setup below only needs to be done once per MSDK https://analog-devices-msdk.
 3. Install the Microsoft https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools
 4. Use CTRL + SHIFT + P (or COMMAND + SHIFT + P on MacOS) to open the developer prompt.
 5. Type "open user settings" and select the "Preferences: Open User Settings (JSON)" option.
+![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/20e5f755-0775-4ce4-991a-1b57210710ef)
 
 
 ## Conclusion
