@@ -81,7 +81,7 @@ ai8x-synthesis
    └─ trained
         └─ ai85-finger-numbers-qat8.pth.tar
 ```
-You will get `ai85-finger-numbers-qat8-q.pth.tar`
+You will get `ai85-finger-numbers-qat8-q.pth.tar` after run script `quantize_Finger_Numbers.sh`
 
 Place `quantize_Finger_Numbers.sh` and `gen-finger_numbers.sh` in directory according to the following structure.
 ```
