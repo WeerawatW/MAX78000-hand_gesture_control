@@ -138,7 +138,7 @@ Dowload `quantize_Finger_Numbers.sh` here: https://github.com/WeerawatW/MAX78000
 
 Dowload `gen-finger_numbers.sh` here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/gen-finger_numbers.sh
 ```
-`python ai8xize.py --test-dir sdk/Examples/MAX78000/CNN --prefix finger_numbers --checkpoint-file trained/ai85-finger-numbers-qat8-q.pth.tar --config-file networks/finger_numbers.yaml --device MAX78000 --compact-data --mexpress --timer 0 --display-checkpoint --verbose --overlap-data --mlator --new-kernel-loader --overwrite --no-unload`
+` python ai8xize.py --test-dir sdk/Examples/MAX78000/CNN --prefix finger_numbers --checkpoint-file trained/ai85-finger-numbers-qat8-q.pth.tar --config-file networks/finger_numbers.yaml --device MAX78000 --compact-data --mexpress --timer 0 --display-checkpoint --verbose --overlap-data --mlator --new-kernel-loader --overwrite --no-unload `
 
 | parameters | discript parameter |
 | ----------- | ----------------- |
@@ -158,6 +158,7 @@ Dowload `gen-finger_numbers.sh` here: https://github.com/WeerawatW/MAX78000-hand
 | overwrite | overwrite target (if present) |
 | no-unload | disable cnn_unload() function |
 
+```
 ai8x-synthesis
    ├─ quantize_Finger_Numbers.sh
    └─ gen-finger_numbers.sh
