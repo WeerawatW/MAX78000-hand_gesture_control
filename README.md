@@ -190,10 +190,11 @@ The environment here is very well configured, for the system, you do not need to
 
 After the installation is completed, it is necessary to configure a little, and then you can use it to complete compilation, burning and other operations.
 
-Getting Started with Visual Studio Code
-The MSDK includes Visual Studio Code ("VS Code") support through the VSCode-Maxim project.
+## Getting Started with Visual Studio Code
 
-This section walks through setup, opening, and running an example project with VS Code. This material is also available in video form targeting the MAX78000 in "Understanding Artificial Intelligence Episode 8.5 - Visual Studio Code". For complete documentation, see the Visual Studio Code section of this User Guide.
+The MSDK includes Visual Studio Code ("VS Code") support through the [VSCode-Maxim](https://github.com/Analog-Devices-MSDK/VSCode-Maxim) project.
+
+This section walks through setup, opening, and running an example project with VS Code. This material is also available in video form targeting the MAX78000 in ["Understanding Artificial Intelligence Episode 8.5 - Visual Studio Code"](https://www.analog.com/en/education/education-library/videos/6313212752112.html). For complete documentation, see the[ Visual Studio Code](https://analog-devices-msdk.github.io/msdk/USERGUIDE/#visual-studio-code) section of this User Guide.
 ## Conclusion
 ----------------------------------------------
 ---------------------------------------------
