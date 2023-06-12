@@ -69,33 +69,19 @@ ai8x-training
 The meaning of each parameter is as follows:
 | Parameters | describe parameter |
 | ------------ | ------------------- |
-
 | deterministic | Set the random number seed to produce repeatable training results |
-| ------------ | ------------------- |
 | print-freq 200 | In each epech, how many training samples are printed once |
-| ------------ | ------------------- |
 | pr-curves | Display the precision-recall curves Display the precision-recall curve |
-| ------------ | ------------------- |
 | epochs 100 | the number of training times |
-| ------------ | ------------------- |
 | optimizer Adam | optimizer |
-| ------------ | ------------------- |
 | lr 0.001 | learning rate learning rate |
-| ------------ | ------------------- |
 | wd 0: weight decay |
-| ------------ | ------------------- |
 | model ai85tinierssd | model selection, the model definition is in the models folder |
-| ------------ | ------------------- |
 | use-bias | use bias |
-| ------------ | ------------------- |
 | momentum 0.9 | Momentum, a parameter of the Adam optimizer |
-| ------------ | ------------------- |
 | weight-decay 5e-4 | Weight decay to prevent overfitting |
-| ------------ | ------------------- |
 | dataset cat | dataset name, previously defined in the dataset loading file |
-| ------------ | ------------------- |
 | device MAX78000 | MCU chip model |
-| ------------ | ------------------- |
 | obj-detection | object detection |
 | obj-detection-params | parameters/obj_detection_params_svhn.yaml target recognition training parameters |
 | batch-size 16 | The number of samples passed into the neural network each time |
