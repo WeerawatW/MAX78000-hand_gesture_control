@@ -89,16 +89,6 @@ ai8x-synthesis
 ```
 You will get `ai85-finger-numbers-qat8-q.pth.tar` after run script `quantize_Finger_Numbers.sh`
 
-Place `quantize_Finger_Numbers.sh` and `gen-finger_numbers.sh` in directory according to the following structure.
-
-Dowload `quantize_Finger_Numbers.sh` here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/quantize_Finger_Numbers.sh
-
-Dowload `gen-finger_numbers.sh` here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/gen-finger_numbers.sh
-```
-ai8x-synthesis
-   ├─ quantize_Finger_Numbers.sh
-   └─ gen-finger_numbers.sh
-```
 Place `sample_fingers_number.npy` in directory according to the following structure.
 
 Dowload file here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/tests/sample_fingers_number.npy
@@ -115,6 +105,16 @@ Dowload file here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/bl
 ai8x-synthesis
    └─ network
        └─ finger_numbers.yaml
+```
+Place `quantize_Finger_Numbers.sh` and `gen-finger_numbers.sh` in directory according to the following structure.
+
+Dowload `quantize_Finger_Numbers.sh` here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/quantize_Finger_Numbers.sh
+
+Dowload `gen-finger_numbers.sh` here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/gen-finger_numbers.sh
+```
+ai8x-synthesis
+   ├─ quantize_Finger_Numbers.sh
+   └─ gen-finger_numbers.sh
 ```
 
 Type the following command:
