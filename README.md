@@ -184,8 +184,8 @@ After the run is completed, you will get the generated file in the directory `sd
 
 
 ## Deployment on board MAX78000EVkit
------------------------------------------------
------------------------------------------------
+
+Configure the environment
 ## Conclusion
 ----------------------------------------------
 ---------------------------------------------
