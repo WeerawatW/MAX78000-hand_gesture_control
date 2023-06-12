@@ -97,15 +97,11 @@ The meaning of each parameter is as follows:
 | device MAX78000 | MCU chip model |
 | ------------ | ------------------- |
 | obj-detection | object detection |
-| ------------ | ------------------- |
 | obj-detection-params | parameters/obj_detection_params_svhn.yaml target recognition training parameters |
-| ------------ | ------------------- |
 | batch-size 16 | The number of samples passed into the neural network each time |
-| ------------ | ------------------- |
 | qat-policy policies/qat_policy_svhn.yaml| policy for quantization parameters |
-| ------------ | ------------------- |
 | validation-split 0 | Portion of training dataset to set aside for validation We have an independent validation set, no need to divide from the training set, here is set to 0 |
-| ------------ | ------------------- |
+
 Open terminal and type this command:
 ```
 $cd ai8x-training
