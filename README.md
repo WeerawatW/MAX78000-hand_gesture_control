@@ -3,6 +3,9 @@ The main reference to the official warehouse of the board for training and deplo
 
 ## Project Introduction
 To control TV with hands or fingers, we want to create AI. to make YouTube and smart TV more convenient to use,This project will use MAX78000EVkit for deployment and test AI hand gesture control.
+## MAX78000EVkit
+![](BoardMAX78000EVkit.jpg)
+
 ### Purpose
 This project create for use hand or fingers to control TV instead remote.
 ### Project process
