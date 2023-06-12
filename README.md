@@ -195,6 +195,18 @@ After the installation is completed, it is necessary to configure a little, and 
 The MSDK includes Visual Studio Code ("VS Code") support through the [VSCode-Maxim](https://github.com/Analog-Devices-MSDK/VSCode-Maxim) project.
 
 This section walks through setup, opening, and running an example project with VS Code. This material is also available in video form targeting the MAX78000 in ["Understanding Artificial Intelligence Episode 8.5 - Visual Studio Code"](https://www.analog.com/en/education/education-library/videos/6313212752112.html). For complete documentation, see the[ Visual Studio Code](https://analog-devices-msdk.github.io/msdk/USERGUIDE/#visual-studio-code) section of this User Guide.
+
+## Setup (VS Code)
+
+The setup below only needs to be done once per MSDK https://analog-devices-msdk.github.io/msdk/USERGUIDE/#installation
+
+1. Download and install Visual Studio Code for your OS here. https://code.visualstudio.com/Download
+2. Launch Visual Studio Code.
+3. Install the Microsoft https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools
+4. Use CTRL + SHIFT + P (or COMMAND + SHIFT + P on MacOS) to open the developer prompt.
+5. Type "open user settings" and select the "Preferences: Open User Settings (JSON)" option.
+
+
 ## Conclusion
 ----------------------------------------------
 ---------------------------------------------
