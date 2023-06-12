@@ -1,5 +1,8 @@
 # The MAX78000 hand gesture control
 The main reference to the official warehouse of the board for training and deploying neural networks:`Github`
+
+1.) ##Project Introduction
+
 * `ai8x-training` Repository for training neural networks on computers:
 
 https://github.com/MaximIntegratedAI/ai8x-training
