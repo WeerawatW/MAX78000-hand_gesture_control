@@ -1,7 +1,15 @@
 # The MAX78000 hand gesture control
 The main reference to the official warehouse of the board for training and deploying neural networks:`Github`
 
-1.) ##Project Introduction
+## Project Introduction
+-----------
+-----------
+### Purpose
+This project create for use hand or fingers to control TV instead remote.
+### Project process
+The software part trains the neural network on the computer and deploys it to run on a single-chip microcomputer, using the CNN neural network accelerator built into the chip.
+
+The main reference to the official warehouse of the board for training and deploying neural networks:`Github`
 
 * `ai8x-training` Repository for training neural networks on computers:
 
@@ -103,3 +111,8 @@ After the run is completed, you will get the generated file in the directory `sd
 
 
 ## Deployment on board MAX78000EVkit
+-----------------------------------------------
+-----------------------------------------------
+## Conclusion
+----------------------------------------------
+---------------------------------------------
