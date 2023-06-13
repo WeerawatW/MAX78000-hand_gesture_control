@@ -18,6 +18,8 @@ https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluat
 This project create for use hand or fingers to control TV instead remote.
 ### Project process
 The software part trains the neural network on the computer and deploys it to run on a single-chip microcomputer, using the CNN neural network accelerator built into the chip.
+## Installation
+Click this link for installation: https://github.com/MaximIntegratedAI/ai8x-training#installation
 
 The main reference to the official warehouse of the board for training and deploying neural networks:`Github`
 
