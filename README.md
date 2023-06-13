@@ -6,6 +6,8 @@ To control TV with hands or fingers, we want to create AI. to make  smart TV mor
 ## MAX78000EVkit
 ![](BoardMAX78000EVkit.jpg)
 
+**You can purchase and read more details here: https://www.analog.com/en/products/max78000.html**
+
 The MAX78000 evaluation kit (EV kit) provides a platform for leveraging the capabilities of the MAX78000 to build new generations of artificial intelligence (AI) devices.
 
 Onboard hardware includes a digital microphone, a gyroscope/ accelerometer, parallel camera module support and a 3.5in touch-enabled color TFT display. A secondary dis- play is driven by a power accumulator for tracking device power consumption over time. Uncommitted GPIO as well as analog inputs are readily accessible through 0.1in pin headers. Primary system power as well as UART access is provided by a USB Micro-B connector. A USB to SPI bridge provides rapid access to onboard memory, allow- ing large networks or images to load quickly.
