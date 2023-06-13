@@ -145,6 +145,10 @@ Place `quantize_Finger_Numbers.sh` and `gen-finger_numbers.sh` in directory acco
 
 Dowload `quantize_Finger_Numbers.sh` here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/quantize_Finger_Numbers.sh
 
+```
+python quantize.py trained/ai85-finger-numbers-qat8.pth.tar trained/ai85-finger-numbers-qat8-q.pth.tar --device MAX78000 -v "$@"
+```
+
 Dowload `gen-finger_numbers.sh` here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/gen-finger_numbers.sh
 
 ```
