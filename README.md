@@ -36,7 +36,7 @@ https://github.com/Analog-Devices-MSDK/msdk
 * You can download our file for compare your result!: https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/untagged-942b36396836df061b0d/project_file.zip or https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/ProjectFile/project_file.zip
 
 * But you can dowload file step by step too!.
-## ai8x-training
+## 1) ai8x-training
 Process datasets 
 You can download only dataset here:
 
@@ -112,7 +112,7 @@ The trained model will be saved in a directory with these files:`logs`
 ```
 The naxt step in this will be used `qat_best.pth.tar` but before use we must rename `qat_best.pth.tar` to `ai85-finger-numbers-qat8.pth.tar`.
 
-## ai8x-synthesis
+## 2) ai8x-synthesis
 Place `ai85-finger-numbers-qat8.pth.tar` in directory according to the following structure.
 ```
 ai8x-synthesis
@@ -184,7 +184,7 @@ After the run is completed, you will get the generated file in the directory `sd
 ![](generated%20c%20code.jpg)
 
 
-## Deployment on board MAX78000EVkit
+## 3) Deployment on board MAX78000EVkit
 
 Configure the environment
 The environment here is very well configured, for the system, you do not need to clone the code from above, you can directly use the official exe program to install: https://www.analog.com/en/design-center/evaluation-hardware-and-software/software/software-download.html?swpart=sfw0010820a
