@@ -62,8 +62,7 @@ Dowload file here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/bl
 ```
 ai8x-training
   └─ dataset
-        └─ finger_number.py
-  
+        └─ finger_number.py  
 ```
 Place `train_Fingers_Numbers.sh` in ai8x-training.
 
