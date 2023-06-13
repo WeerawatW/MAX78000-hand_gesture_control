@@ -120,7 +120,8 @@ ai8x-synthesis
         └─ ai85-finger-numbers-qat8.pth.tar
 ```
 You will get `ai85-finger-numbers-qat8-q.pth.tar` after run script `quantize_Finger_Numbers.sh`
-`ai85-finger-numbers-qat8-q.pth.tar` use for generate c code.
+
+By using `ai85-finger-numbers-qat8-q.pth.tar`  for generate c code.
 
 Place `sample_fingers_number.npy` in directory according to the following structure.
 
