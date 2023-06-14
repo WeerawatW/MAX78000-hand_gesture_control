@@ -145,6 +145,15 @@ ai8x-synthesis
    └─ network
        └─ finger_numbers.yaml
 ```
+I configuration `layer 16 to layer 19 output_processors 0xffffffff00000000` that depend on `finger_number.py`  output.
+| classes | output_processors | how many bit of output_processors|
+| -------- | ---------------- | -------------------------------- |
+| 1 or 2 | 0xff00000000000000 |              8 bit               |
+| 3 or 4 | 0xffff000000000000 |             16 bit               |
+| 5 or 6 | 0xffffff0000000000 |             24 bit               |
+| 7 or 8 | 0xffffffff00000000 |             32 bit               |
+| 9 or 10 | 0xfffffffffff00000 |            44 bit               |
+
 Place `quantize_Finger_Numbers.sh` and `gen-finger_numbers.sh` in directory according to the following structure.
 
 Dowload `quantize_Finger_Numbers.sh` here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/quantize_Finger_Numbers.sh
