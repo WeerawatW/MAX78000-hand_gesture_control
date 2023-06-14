@@ -146,7 +146,7 @@ ai8x-synthesis
        └─ finger_numbers.yaml
 ```
 I configuration `layer 16 to layer 19 output_processors 0xffffffff00000000` that depend on `finger_number.py`  output.
-| classes | output_processors | how many bit of output_processors|
+| number of classes | output_processors | how many bit of output_processors|
 | -------- | ---------------- | -------------------------------- |
 | 1 or 2 | 0xff00000000000000 |              8 bit               |
 | 3 or 4 | 0xffff000000000000 |             16 bit               |
