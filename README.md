@@ -302,6 +302,7 @@ See https://analog-devices-msdk.github.io/msdk/USERGUIDE/#board-support-packages
 16. Exercise the debugger and press stop to disconnect when finished.
 
 ### How to use.
+![images](https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/8c7b717a3c58af33b6f6b5e49d027369bb5603bd/hand.png)
 
 ## Conclusion
 ----------------------------------------------
