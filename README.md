@@ -303,7 +303,7 @@ See https://analog-devices-msdk.github.io/msdk/USERGUIDE/#board-support-packages
 
 ### How to use.
 
-![images](hand how to .png)
+![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/5343587013f17eca4fbb815caa8edd8af23ddd6f/hand%20how%20to%20.png)
 
 ## Conclusion
 ----------------------------------------------
