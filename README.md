@@ -28,6 +28,9 @@ There are four main components of this project, as shown in the figure below:
 
 ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/6607483b-e4ea-4f95-b761-d82c618fa58d)
 
+![MicrosoftTeams-image (53)](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/45c14b91-4f6c-47e8-938f-62a96da27585)
+
+
 
 ## Installation
 Click this link for installation: https://github.com/MaximIntegratedAI/ai8x-training#installation
