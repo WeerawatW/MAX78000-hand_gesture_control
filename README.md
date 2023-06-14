@@ -68,7 +68,7 @@ ai8x-training
   └─ dataset
         └─ finger_number.py  
 ```
-We config finger_number.py output parameter see more here: https://github.com/WeerawatW/MAX78000-prepare-dataset/blob/main/README.md#finger_numberpy-output
+We config `finger_number.py` output parameter see more here: https://github.com/WeerawatW/MAX78000-prepare-dataset/blob/main/README.md#finger_numberpy-output
 
 Place `train_Fingers_Numbers.sh` in ai8x-training.
 
