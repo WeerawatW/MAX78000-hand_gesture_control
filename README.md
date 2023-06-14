@@ -60,7 +60,7 @@ ai8x-training
              └─ train
 ```
 Place `finger_number.py` in dataset.
-We config finger_number.py output parameter see more here: https://github.com/WeerawatW/MAX78000-prepare-dataset/blob/main/README.md#finger_numberpy-output
+
 Dowload file here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/6c95af2d96c45ef934c73e30a5c9bdb86bf1a01e/ai8x-training/datasets/finger_number.py
 or https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/github%20python%20file/finger_number.py
 ```
@@ -68,6 +68,7 @@ ai8x-training
   └─ dataset
         └─ finger_number.py  
 ```
+We config finger_number.py output parameter see more here: https://github.com/WeerawatW/MAX78000-prepare-dataset/blob/main/README.md#finger_numberpy-output
 
 Place `train_Fingers_Numbers.sh` in ai8x-training.
 
