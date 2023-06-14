@@ -16,6 +16,19 @@ https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluat
 
 ### Purpose
 This project create for use hand or fingers to control TV instead remote.
+
+### Project design ideas
+There are four main components of this project, as shown in the figure below:
+- MAX78000EVKIT For Tinierssd model.
+- Arduino nano (Used to transmitter infrared signals to control Smart TV.)
+- LED Infrared.
+- Schottky Diode Bi-Directional Logic Level Conversion Circuit
+  - 10k Resistor 
+  - 1N4148 Diode 
+
+![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/6607483b-e4ea-4f95-b761-d82c618fa58d)
+
+
 ## Installation
 Click this link for installation: https://github.com/MaximIntegratedAI/ai8x-training#installation
 
