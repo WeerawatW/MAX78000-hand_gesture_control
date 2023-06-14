@@ -139,9 +139,9 @@ ai8x-synthesis
        └─ sample_fingers_number.npy
 ```
 
+Dowload file here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/network/finger_numbers.yaml
 Place `finger_numbers.yaml` in directory according to the following structure.
 
-Dowload file here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/network/finger_numbers.yaml
 ```
 ai8x-synthesis
    └─ network
@@ -158,6 +158,12 @@ I configuration `layer 16 to layer 19 output_processors 0xffffffff00000000` that
 
 Place `quantize_Finger_Numbers.sh` and `gen-finger_numbers.sh` in directory according to the following structure.
 
+```
+ai8x-synthesis
+   ├─ quantize_Finger_Numbers.sh
+   └─ gen-finger_numbers.sh
+```
+
 Dowload `quantize_Finger_Numbers.sh` here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/quantize_Finger_Numbers.sh
 
 In `quantize_Finger_Numbers.sh` :
@@ -170,12 +176,6 @@ Dowload `gen-finger_numbers.sh` here: https://github.com/WeerawatW/MAX78000-hand
 In `gen-finger_numbers.sh` :
 ```
 python ai8xize.py --test-dir sdk/Examples/MAX78000/CNN --prefix finger_numbers --checkpoint-file trained/ai85-finger-numbers-qat8-q.pth.tar --config-file networks/finger_numbers.yaml --device MAX78000 --compact-data --mexpress --timer 0 --display-checkpoint --verbose --overlap-data --mlator --new-kernel-loader --overwrite --no-unload
-```
-
-```
-ai8x-synthesis
-   ├─ quantize_Finger_Numbers.sh
-   └─ gen-finger_numbers.sh
 ```
 
 The meaning of each parameter is as follows:
