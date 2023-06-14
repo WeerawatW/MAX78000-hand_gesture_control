@@ -130,9 +130,9 @@ ai8x-synthesis
 You will get `ai85-finger-numbers-qat8-q.pth.tar` after run script `quantize_Finger_Numbers.sh`
  by using `ai85-finger-numbers-qat8-q.pth.tar`  for generate c code.
 
+Dowload file here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/tests/sample_fingers_number.npy
 Place `sample_fingers_number.npy` in directory according to the following structure.
 
-Dowload file here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/tests/sample_fingers_number.npy
 ```
 ai8x-synthesis
    └─ tests
