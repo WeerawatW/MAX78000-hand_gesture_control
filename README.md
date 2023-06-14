@@ -301,6 +301,8 @@ See https://analog-devices-msdk.github.io/msdk/USERGUIDE/#board-support-packages
 
 16. Exercise the debugger and press stop to disconnect when finished.
 
+### How to use.
+![](hand how to .png)
 
 ## Conclusion
 ----------------------------------------------
