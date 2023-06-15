@@ -310,7 +310,8 @@ See https://analog-devices-msdk.github.io/msdk/USERGUIDE/#board-support-packages
 
 14. Verify the program counter enters main successfully.
 
-     ----------image--------
+![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/0c20bcf3-6c95-4a5d-9b49-3578b117c7c0)
+
      
 15. Press Continue (F5) to run the program.
 
