@@ -295,11 +295,15 @@ See https://analog-devices-msdk.github.io/msdk/USERGUIDE/#board-support-packages
 
 10. Run the "build" task to compile the project for the configured Target Microcontroller and BSP. Notice that the TARGET and BOARD Build Configuration Variables are set on the command line. The program binary is successfully compiled into the .elf program binary in the build sub-folder of the project.
 
-            ----------image--------
+![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/4cbeebb6-5aae-4db2-a131-5a99d74d9c67)
+
+
 11. Connect a debug adapter between the host PC and the evaluation platform. Detailed instructions on this hardware setup can be found in the evaluation platform's Datasheet and Quick-Start Guide, which are available on its https://www.analog.com/en/index.html product page.
 12. Run the flash build task. Running this task will automatically build the project if needed, flash the program binary, and halt the program execution to await a debugger connection.
 
-      ----------image--------
+![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/2a8a567a-ac7c-4ab9-bead-b7d7c1992695)
+
+
 13. Open the Run and Debug window (CTRL+SHIFT+D) and launch the debugger (F5).
 
 ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/e3483859-fc48-4351-9f87-28fd293e1acb)
