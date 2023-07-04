@@ -289,7 +289,7 @@ with open(labels_path,'r') as y:
                                 list_ymax.clear()
                                 list_height.clear()
                                 list_width.clear()
-
+#-------------------------------  Count class --------------------------------
                             print("label_1_total = ", label_1)
                             print("label_2_total = ", label_2)
                             print("label_3_total = ", label_3)
