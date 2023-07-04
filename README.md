@@ -26,7 +26,8 @@ There are four main components of this project, as shown in the figure below:
   - 10k Resistor 
   - 1N4148 Diode 
 Block Diagram
-![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/6607483b-e4ea-4f95-b761-d82c618fa58d)
+![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/a50a7d39-30c2-480b-8fe8-63a74ebdf42a)
+
 
 Schottky Diode Bi-Directional Logic Level Conversion Circuit
 
