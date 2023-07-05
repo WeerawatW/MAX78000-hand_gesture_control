@@ -347,8 +347,9 @@ See https://analog-devices-msdk.github.io/msdk/USERGUIDE/#board-support-packages
 ### How to use.
 ![images](https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/8c7b717a3c58af33b6f6b5e49d027369bb5603bd/hand.png)
 
-![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/7af3a985-9667-469d-99b0-b777802a8d63)
-![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/5c2070a7-600e-4cdb-8e1b-16313e773184)
+![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/ddf9aa82-6930-4ebd-b7e5-c70d88db2488)
+![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/ad00f00a-78ce-4a5e-8f22-9bc1b5d6f64e)
+
 
 
 ## Conclusion
