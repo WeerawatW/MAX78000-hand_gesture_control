@@ -63,7 +63,7 @@ https://github.com/Analog-Devices-MSDK/msdk
 * But you can dowload file step by step too!.
 ## 1) ai8x-training
 Process datasets 
-You can download only [datasets](https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/ProjectFile/Dataset.zip) here:
+You can download only [datasets.zip](https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/ProjectFile/Dataset.zip) here:
 
 
 After the download is complete, I organize the directory according to the following structure:
