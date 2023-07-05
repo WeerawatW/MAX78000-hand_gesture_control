@@ -92,7 +92,7 @@ ai8x-training
 We config `finger_number.py` output parameter see more here: https://github.com/WeerawatW/MAX78000-prepare-dataset/blob/main/README.md#finger_numberpy-output
 how to place `finger_number.py` see here: https://github.com/WeerawatW/MAX78000-hand_gesture_control#1-ai8x-training
 
-![](images/config_output.png)
+![](Images/config_output.png)
 
 The fields have the following meanings:
 *  `name`: The dataset name, the name passed in when training the neural network
@@ -104,6 +104,8 @@ The fields have the following meanings:
         This describes how to combine these tensors of different sizes. We use lists.
         :param batch: an iterable of N sets from __getitem__()
         :return: a tensor of images, lists of varying-size tensors of bounding boxes and labels
+  
+  `finger_number.py` output must match ship label : https://github.com/WeerawatW/MAX78000-prepare-dataset/edit/main/README.md#ship-label
 
 Place `train_Fingers_Numbers.sh` in ai8x-training.
 
