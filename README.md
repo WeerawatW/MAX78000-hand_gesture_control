@@ -364,7 +364,7 @@ See https://analog-devices-msdk.github.io/msdk/USERGUIDE/#board-support-packages
 ## Arduino Nano Design Logic
   when MAX78000EVKIT send Data to Arduino Nano 
 
-  ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/6b2b7f8d-c1b6-4139-a8a8-b1dfeae00094)
+  <img scr = "https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/6b2b7f8d-c1b6-4139-a8a8-b1dfeae00094" height= '320' widht = '640'>
   ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/a69154c2-7889-461f-8ce3-a844f8fdd6c5)
       ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/e744bd30-cd4c-4729-8cd0-51e8dc076054)
 
