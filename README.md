@@ -360,6 +360,8 @@ See https://analog-devices-msdk.github.io/msdk/USERGUIDE/#board-support-packages
 
 ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/ee1efae8-548e-4ea3-8582-060511521ad7)
 
+## Arduino Nano Design Logic
+  when MAX78000EVKIT send Data to Arduino Nano 
 ## Conclusion
 ----------------------------------------------
 ---------------------------------------------
