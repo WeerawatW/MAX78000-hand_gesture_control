@@ -58,14 +58,12 @@ https://github.com/MaximIntegratedAI/ai8x-synthesis
 
 https://github.com/Analog-Devices-MSDK/msdk
 
-* You can download our file for compare your result!: https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/untagged-942b36396836df061b0d/project_file.zip or https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/ProjectFile/project_file.zip
+* You can download our file for compare your result! : [Link 1](https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/untagged-942b36396836df061b0d/project_file.zip) or [Link 2](https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/ProjectFile/project_file.zip)
 
 * But you can dowload file step by step too!.
 ## 1) ai8x-training
 Process datasets 
-You can download only dataset here:
-
-https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/untagged-a50fbdb1ade3ade8cfe3/finger_numbers.zip
+You can download only [datasets](https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/ProjectFile/Dataset.zip) here:
 
 
 After the download is complete, I organize the directory according to the following structure:
@@ -81,18 +79,16 @@ ai8x-training
              ├─ test
              └─ train
 ```
-Place `finger_number.py` in dataset.
-
-Dowload file here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/6c95af2d96c45ef934c73e30a5c9bdb86bf1a01e/ai8x-training/datasets/finger_number.py
-or https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/github%20python%20file/finger_number.py
-### `finger_number.py` output.
+Place `finger_number.py` in dataset folder.
 ```
 ai8x-training
   └─ dataset
         └─ finger_number.py  
 ```
+Dowload file here: [finger_number.py](https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/6c95af2d96c45ef934c73e30a5c9bdb86bf1a01e/ai8x-training/datasets/finger_number.py)
+second link [finger_number.py](https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/github%20python%20file/finger_number.py)
+
 We config `finger_number.py` output parameter see more here: https://github.com/WeerawatW/MAX78000-prepare-dataset/blob/main/README.md#finger_numberpy-output
-how to place `finger_number.py` see here: https://github.com/WeerawatW/MAX78000-hand_gesture_control#1-ai8x-training
 
 ![](Images/config_output.png)
 
