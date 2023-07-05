@@ -358,7 +358,7 @@ See https://analog-devices-msdk.github.io/msdk/USERGUIDE/#board-support-packages
 
 ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/7f2902b8-deff-49e5-8699-03d732c4ca54)
 
-![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/ce95f6f9-ddd8-4808-ac89-b7d04a7dc49c)
+![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/ee1efae8-548e-4ea3-8582-060511521ad7)
 
 ## Conclusion
 ----------------------------------------------
