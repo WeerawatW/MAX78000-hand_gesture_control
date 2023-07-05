@@ -357,9 +357,9 @@ See https://analog-devices-msdk.github.io/msdk/USERGUIDE/#board-support-packages
 ## MAX78000EVKIT Design Processing
   The UART send code is as follows:
 
-![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/7f2902b8-deff-49e5-8699-03d732c4ca54)
+<img src = 'https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/7f2902b8-deff-49e5-8699-03d732c4ca54' width='480' height ='480'>
 
-![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/ee1efae8-548e-4ea3-8582-060511521ad7)
+<img src = 'https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/ee1efae8-548e-4ea3-8582-060511521ad7' width='480' height ='480'>
 
 ## Arduino Nano Design Logic
   when MAX78000EVKIT send Data to Arduino Nano 
