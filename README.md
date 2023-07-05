@@ -88,9 +88,11 @@ ai8x-training
 Dowload file here: [finger_number.py](https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/6c95af2d96c45ef934c73e30a5c9bdb86bf1a01e/ai8x-training/datasets/finger_number.py)
 second link [finger_number.py](https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/github%20python%20file/finger_number.py)
 
-We config `finger_number.py` output parameter see more here: https://github.com/WeerawatW/MAX78000-prepare-dataset/blob/main/README.md#finger_numberpy-output
+We config `finger_number.py` output parameter must match any class we have, in this case we have 6 class.
 
 ![](Images/config_output.png)
+
+> [how to prepare dataset? ](https://github.com/WeerawatW/MAX78000-prepare-dataset.git)
 
 The fields have the following meanings:
 *  `name`: The dataset name, the name passed in when training the neural network
@@ -103,41 +105,42 @@ The fields have the following meanings:
         :param batch: an iterable of N sets from __getitem__()
         :return: a tensor of images, lists of varying-size tensors of bounding boxes and labels
   
-  `finger_number.py` output must match ship label : https://github.com/WeerawatW/MAX78000-prepare-dataset/edit/main/README.md#ship-label
+  `finger_number.py` output must match [ship label](https://github.com/WeerawatW/MAX78000-prepare-dataset/tree/main#ship-label) 
 
 Place `train_Fingers_Numbers.sh` in ai8x-training.
 
-Dowload file here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/2fb763b1f79c7f50ea98afd5a034290114651a4b/ai8x-training/train_Fingers_Numbers.sh
 ```
 ai8x-training
   └─ train_Fingers_Numbers.sh
-``` 
+```
+Dowload [train_Fingers_Numbers.sh](https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/2fb763b1f79c7f50ea98afd5a034290114651a4b/ai8x-training/train_Fingers_Numbers.sh) here.
+
 In `train_Fingers_Numbers.sh` :
 ```
 python train.py --deterministic --print-freq 200  --epochs 100 --optimizer Adam --lr 0.001 --wd 0 --model ai85tinierssd --use-bias --momentum 0.9 --weight-decay 5e-4 --dataset Fingers_number --device MAX78000 --obj-detection --obj-detection-params parameters/obj_detection_params_svhn.yaml --batch-size 16 --qat-policy policies/qat_policy_svhn.yaml --validation-split 0 "$@"
 ```
 
 The meaning of each parameter is as follows:
-| Parameters | describe parameter |
-| ------------ | ------------------- |
-| deterministic | Set the random number seed to produce repeatable training results |
-| print-freq 200 | In each epech, how many training samples are printed once |
-| pr-curves | Display the precision-recall curves Display the precision-recall curve |
-| epochs 100 | the number of training times |
-| optimizer Adam | optimizer |
-| lr 0.001 | learning rate learning rate |
-| wd 0: weight decay |
-| model ai85tinierssd | model selection, the model definition is in the models folder |
-| use-bias | use bias |
-| momentum 0.9 | Momentum, a parameter of the Adam optimizer |
-| weight-decay 5e-4 | Weight decay to prevent overfitting |
-| dataset cat | dataset name, previously defined in the dataset loading file |
-| device MAX78000 | MCU chip model |
-| obj-detection | object detection |
-| obj-detection-params | parameters/obj_detection_params_svhn.yaml target recognition training parameters |
-| batch-size 16 | The number of samples passed into the neural network each time |
-| qat-policy policies/qat_policy_svhn.yaml| policy for quantization parameters |
-| validation-split 0 | Portion of training dataset to set aside for validation We have an independent validation set, no need to divide from the training set, here is set to 0 |
+| Parameters | value | describe parameter |
+| ------------ |----| ------------------- |
+| deterministic |none value| Set the random number seed to produce repeatable training results |
+| print-freq | 200 | In each epech, how many training samples are printed once |
+| pr-curves |none value| Display the precision-recall curves Display the precision-recall curve |
+| epochs | 100 | the number of training times |
+| optimizer | Adam | optimizer |
+| lr | 0.001 | learning rate learning rate |
+| wd | 0 | weight decay |
+| model | ai85tinierssd | model selection, the model definition is in the models folder |
+| use-bias | none value | use bias |
+| momentum | 0.9 | Momentum, a parameter of the Adam optimizer |
+| weight-decay | 5e-4 | Weight decay to prevent overfitting |
+| dataset | Fingers_number | dataset name, previously defined in the dataset loading file |
+| device | MAX78000 | MCU chip model |
+| obj-detection | none value | object detection |
+| obj-detection-params | none value | parameters/obj_detection_params_svhn.yaml target recognition training parameters |
+| batch-size | 16 | The number of samples passed into the neural network each time |
+| qat-policy policies/qat_policy_svhn.yaml| none value| policy for quantization parameters |
+| validation-split | 0 | Portion of training dataset to set aside for validation We have an independent validation set, no need to divide from the training set, here is set to 0 |
 
 Open terminal and type this command:
 ```
