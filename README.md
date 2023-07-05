@@ -167,7 +167,7 @@ ai8x-synthesis
 You will get `ai85-finger-numbers-qat8-q.pth.tar` after run script `quantize_Finger_Numbers.sh`
  by using `ai85-finger-numbers-qat8-q.pth.tar`  for generate c code.
 
-Dowload file here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/tests/sample_fingers_number.npy
+Dowload [sample_fingers_number.npy](https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/tests/sample_fingers_number.npy) here.
 Place `sample_fingers_number.npy` in directory according to the following structure.
 
 ```
@@ -175,8 +175,9 @@ ai8x-synthesis
    └─ tests
        └─ sample_fingers_number.npy
 ```
+ **sample_fingers_number.npy** is a fake data(random numpy array,format (Channel,Height,Width),shap (3,74,74)) use to test your model. 
 
-Dowload file here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/network/finger_numbers.yaml
+Dowload [finger_numbers.yaml](//github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/network/finger_numbers.yaml) here.
 Place `finger_numbers.yaml` in directory according to the following structure.
 
 ```
@@ -201,14 +202,15 @@ ai8x-synthesis
    └─ gen-finger_numbers.sh
 ```
 
-Dowload `quantize_Finger_Numbers.sh` here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/quantize_Finger_Numbers.sh
+Dowload [quantize_Finger_Numbers.sh](https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/quantize_Finger_Numbers.sh) here.
 
 In `quantize_Finger_Numbers.sh` :
 ```
 python quantize.py trained/ai85-finger-numbers-qat8.pth.tar trained/ai85-finger-numbers-qat8-q.pth.tar --device MAX78000 -v "$@"
 ```
+This step will convert ai85-finger-numbers-qat8.pth.tar to  ***ai85-finger-numbers-qat8-q.pth.tar*** , that use in `gen-finger_numbers.sh`.
 
-Dowload `gen-finger_numbers.sh` here: https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/gen-finger_numbers.sh
+Dowload [gen-finger_numbers.sh](https://github.com/WeerawatW/MAX78000-hand_gesture_control/blob/main/ai8x-synthesis/gen-finger_numbers.sh) here.
 
 In `gen-finger_numbers.sh` :
 ```
@@ -220,7 +222,7 @@ The meaning of each parameter is as follows:
 | ----------- | ----------------- |
 | test-dir sdk/Examples/MAX78000/CNN | save directory |
 | prefix finger_numbers | saved folder name |
-| checkpoint-file trained/ai85-finger-numbers-qat8-q.pth.tar | quantization format file in STEP 3 |
+| checkpoint-file trained/ai85-finger-numbers-qat8-q.pth.tar | quantization format file |
 | networks/finger_numbers.yaml | network configuration file |
 | device MAX78000 | the chip model of the microcontroller |
 | compact-data | Use memcpy() to load input data to save code space (also enabled by default) |
