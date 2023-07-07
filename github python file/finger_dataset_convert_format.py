@@ -5,13 +5,13 @@ import shutil
 
 # Example
 mode = 'train' # train or test
-path = '/home/max/Desktop/Max/SRM/SRM_shear/'
+path = '/home/max/Desktop/Max/SRM/SRM_blur/'
 labels_path = path+mode+'/_annotations.txt'
 new_label_path = path+mode+'_label'+'/_annotations.txt'
 class_path = path+mode+'/_classes.txt'
 image_path = path+mode
 csv_path = path+mode+'_label/'+mode+'_info.csv'
-new_file_name = 'SRM_'+mode+'_shear'
+new_file_name = 'SRM_'+mode+'_test'
 
 #you can path here.
 # mode = 'train' # train or test  
@@ -52,6 +52,8 @@ try:
     shutil.move(labels_path,path+mode+'_label')
     shutil.move(class_path,path+mode+'_label')
 except FileNotFoundError:
+    pass
+except shutil.Error:
     pass
 
 with open(csv_path, "w") as f:
