@@ -3,20 +3,25 @@ import os
 import csv
 import shutil
 
-# You can path here
+# Example
 mode = 'train' # train or test
-labels_path = '/home/max/Desktop/Max/DatsetV2/custom_test/'+mode+'_label/_annotations.txt'
-image_path = '/home/max/Desktop/Max/DatsetV2/custom_test/'+mode
-new_file_path ='/home/max/Desktop/Max/DatsetV2/custom_test/'+mode+'_label/'+mode+'_info.csv'
-new_name_file = mode
+path = '/home/max/Desktop/Max/SRM/SRM_shear/'
+labels_path = path+mode+'/_annotations.txt'
+new_label_path = path+mode+'_label'+'/_annotations.txt'
+class_path = path+mode+'/_classes.txt'
+image_path = path+mode
+csv_path = path+mode+'_label/'+mode+'_info.csv'
+new_file_name = 'SRM_'+mode+'_shear'
 
-# Or 
-# mode = 'test' # train or test       # <------------------------------------- you can path here
-# labels_path = 'your_text_path'      # <------------------------------------- you can path here
-# image_path = 'your_image_path'      # <------------------------------------- you can path here
-# new_file_path ='your_csv_path'      # <------------------------------------- you can path here
-# new_name_file = mode    
-#--------------------------------------------------------------------------------------------------
+#you can path here.
+# mode = 'train' # train or test  
+# path = 'your_path'                                
+# labels_path = path+mode+'_label/_annotations.txt'  
+# class_path = path+mode+'/_classes.txt'          
+# image_path = path+mode                                     
+# csv_path = path+mode+'_label/'+mode+'_info.csv'        
+# new_file_name = 'your_new_image_name'  
+#----------------------------------- This file can convert maximum 2 object in 1 images -----------------------------------------
 
 num_of_classes = 0
 list_label = []
@@ -39,13 +44,20 @@ label_10 = 0
 
 try:
     os.mkdir(image_path+'_rename')
+    os.mkdir(path+mode+'_label')
 except FileExistsError:
     pass
-        
-with open(new_file_path, "w") as f:
+
+try:
+    shutil.move(labels_path,path+mode+'_label')
+    shutil.move(class_path,path+mode+'_label')
+except FileNotFoundError:
+    pass
+
+with open(csv_path, "w") as f:
     f.write('img_name,label,width,height,x0,y0,x1,y1,num_of_boxes,img_width,img_height,bb_x0,bb_y0,bb_x1,bb_y1\n')
     
-with open(labels_path,'r') as y:
+with open(new_label_path,'r') as y:
     i = 0
     for data in y:
                 image_name_label = data.split()[0]
@@ -136,6 +148,7 @@ with open(labels_path,'r') as y:
                                 list_height.append(str(int(ymax)-int(ymin))+'.0')
 
 #--------------------------------- change label ---------------------------------- you can comment it if you don't want to change label
+#       2 object in 1 images  
                             elif len(data.split()) == 3:
                                 image_name_label = data.split()[0]
                                 #print(image_name_label)
@@ -271,12 +284,11 @@ with open(labels_path,'r') as y:
                             img_height = str(img.size[1])
                             img_width = str(img.size[0])
 
-                            with open(new_file_path, "a+") as f:
+                            with open(csv_path, "a+") as f:
                                 i += 1
-                                
                                 shutil.copyfile(image_path+'/'+image_name, image_path+'_rename'+'/'+image_name)
-                                os.rename(os.path.join(image_path+'_rename', image_file),os.path.join(image_path+'_rename', new_name_file+'_'+str(i)+".jpg"))
-                                new_name = new_name_file+'_'+str(i)+".jpg"
+                                os.rename(os.path.join(image_path+'_rename', image_file),os.path.join(image_path+'_rename', new_file_name+'_'+str(i)+".jpg"))
+                                new_name = new_file_name+'_'+str(i)+".jpg"
 
                                 try:
                                     f.writelines([new_name,',','\"'+str(list_label)+'\"',',','\"'+str(list_width)+'\"',',','\"'+str(list_height)+'\"',',','\"'+str(list_xmin)+'\"',',','\"'+str(list_ymin)+'\"',',','\"'+str(list_xmax)+'\"',',','\"'+str(list_ymax)+'\"',',',str(num_of_classes),',',img_width,',',img_height,',',str(min(list_xmin)),',',str(min(list_ymin)),',',str(max(list_xmax)),',',str(max(list_ymax)),'\n'])
@@ -289,7 +301,7 @@ with open(labels_path,'r') as y:
                                 list_ymax.clear()
                                 list_height.clear()
                                 list_width.clear()
-#-------------------------------  Count class --------------------------------
+
                             print("label_1_total = ", label_1)
                             print("label_2_total = ", label_2)
                             print("label_3_total = ", label_3)
@@ -300,4 +312,5 @@ with open(labels_path,'r') as y:
                             print("label_8_total = ", label_8)
                             print("label_9_total = ", label_9)
                             print("label_10_total = ", label_10)
+
 print("*-----------------------------------------------------*\nConvert dataset success!!")
