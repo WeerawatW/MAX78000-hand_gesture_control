@@ -364,7 +364,7 @@ See https://analog-devices-msdk.github.io/msdk/USERGUIDE/#board-support-packages
 
 
 ## Arduino Nano Design Logic
-  when MAX78000EVKIT send Data to Arduino Nano 
+  When the Arduino Nano board receives data from the Max78000EVKit, it will instruct the buzzer to sound and the infrared light to transmit a signal to the TV receiver. 
   
   ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/d3b21901-f476-437a-97fc-1c485abe659c)
 
