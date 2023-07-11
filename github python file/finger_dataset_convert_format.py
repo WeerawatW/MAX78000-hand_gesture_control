@@ -4,23 +4,24 @@ import csv
 import shutil
 
 # Example
-mode = 'train' # train or test
-path = '/home/max/Desktop/Max/SRM/SRM_blur/'
-labels_path = path+mode+'/_annotations.txt'
-new_label_path = path+mode+'_label'+'/_annotations.txt'
-class_path = path+mode+'/_classes.txt'
-image_path = path+mode
-csv_path = path+mode+'_label/'+mode+'_info.csv'
-new_file_name = 'SRM_'+mode+'_test'
+# mode = 'test' # train or test
+# path = '/home/max/Desktop/Max/SRM/SRM_test/'
+# labels_path = path+mode+'/_annotations.txt'
+# new_label_path = path+mode+'_label'+'/_annotations.txt'
+# class_path = path+mode+'/_classes.txt'
+# image_path = path+mode
+# csv_path = path+mode+'_label/'+mode+'_info.csv'
+# new_file_name = 'SRM_'+mode+'_test'
 
 #you can path here.
-# mode = 'train' # train or test  
-# path = 'your_path'                                
-# labels_path = path+mode+'_label/_annotations.txt'  
-# class_path = path+mode+'/_classes.txt'          
-# image_path = path+mode                                     
-# csv_path = path+mode+'_label/'+mode+'_info.csv'        
-# new_file_name = 'your_new_image_name'  
+mode = 'train' # train or test  
+path = 'your_path'                                
+labels_path = path+mode+'_label/_annotations.txt'  
+new_label_path = path+mode+'_label'+'/_annotations.txt'
+class_path = path+mode+'/_classes.txt'          
+image_path = path+mode                                     
+csv_path = path+mode+'_label/'+mode+'_info.csv'        
+new_file_name = 'your_new_image_name'  
 #----------------------------------- This file can convert maximum 2 object in 1 images -----------------------------------------
 
 num_of_classes = 0
@@ -68,19 +69,6 @@ with open(new_label_path,'r') as y:
                         if image_name_label == image_name:
                             print(" ")
                             print(image_name_label+' == '+image_name)
-                            if len(data.split()) == 2:
-
-                                data_1 = data.split()[1]
-                                print(data_1)
-                                k = data_1.split(',')
-                                    
-                                xmin = k[0]
-                                ymin = k[1]
-                                xmax = k[2]
-                                ymax = k[3]
-                                class_id = k[4]
-                                # print(" ")
-                                # print(class_id,end=' ')
 
 #       1 object in 1 images                            
                             if len(data.split()) == 2:
@@ -91,63 +79,72 @@ with open(new_label_path,'r') as y:
                                 k = data_1.split(',')
                                     
                                 xmin = k[0]
+                                xmin = float(xmin)
                                 ymin = k[1]
+                                ymin = float(ymin)
                                 xmax = k[2]
+                                xmax = float(xmax)
                                 ymax = k[3]
+                                ymax = float(ymax)
                                 class_id = k[4]
                                 print(" ")
                                 print(class_id,end=' ')
 
                                 if class_id == '0':
                                     label_1 += 1
-                                    class_id = '1'
+                                    class_id = 1
 
                                 elif class_id == '1':
                                     label_2 += 1
-                                    class_id = '2'
+                                    class_id = 2
 
                                 elif class_id == '2':
                                     label_3 += 1
-                                    class_id = '3'
+                                    class_id = 3
 
                                 elif class_id == '3':
                                     label_4 += 1
-                                    class_id = '4'
+                                    class_id = 4
 
                                 elif class_id == '4':
                                     label_5 += 1
-                                    class_id = '5'
+                                    class_id = 5
 
                                 elif class_id == '5':
                                     label_6 += 1
-                                    class_id = '6'
+                                    class_id = 6
 
                                 elif class_id == '6':
                                     label_7 += 1
-                                    class_id = '7'
+                                    class_id = 7
 
                                 elif class_id == '7':
                                     label_8 += 1
-                                    class_id = '8'
+                                    class_id = 8
 
                                 elif class_id == '8':
                                     label_9 += 1
-                                    class_id = '9'
+                                    class_id = 9
 
                                 elif class_id == '9':
                                     label_10 += 1
-                                    class_id = '10'
+                                    class_id = 10
 
                                 print("convert to", class_id,'\n')
                                 #print(image_name_label,xmin,ymin,xmax,ymax,class_id)
                                 num_of_classes = 1
-                                list_label.append(class_id+'.0')
-                                list_xmin.append(xmin+'.0')
-                                list_ymin.append(ymin+'.0')
-                                list_xmax.append(xmax+'.0')
-                                list_ymax.append(ymax+'.0')
-                                list_width.append(str(int(xmax)-int(xmin))+'.0')
-                                list_height.append(str(int(ymax)-int(ymin))+'.0')
+                                # list_label.append(class_id+'.0')
+                                # list_xmin.append(xmin+'.0')
+                                # list_ymin.append(ymin+'.0')
+                                # list_xmax.append(xmax+'.0')
+                                # list_ymax.append(ymax+'.0')
+                                list_label.append(class_id)
+                                list_xmin.append(xmin)
+                                list_ymin.append(ymin)
+                                list_xmax.append(xmax)
+                                list_ymax.append(ymax)
+                                list_width.append(float(int(xmax)-int(xmin)))
+                                list_height.append(float(int(ymax)-int(ymin)))
 
 #--------------------------------- change label ---------------------------------- you can comment it if you don't want to change label
 #       2 object in 1 images  
@@ -156,122 +153,130 @@ with open(new_label_path,'r') as y:
                                 #print(image_name_label)
                                 data_1 = data.split()[1]
                                 data_2 = data.split()[2]
-                                print("x0,y0,x1,y1,label")
-                                print("data_1",data_1)
-                                print("x0,y0,x1,y1,label")
-                                print("data_2",data_2)
+                                # print("x0,y0,x1,y1,label")
+                                # print("data_1",data_1)
+                                # print("x0,y0,x1,y1,label")
+                                # print("data_2",data_2)
                                 k = data_1.split(',')
                                 b = data_2.split(',')
                                 xmin_1 = k[0]
+                                xmin_1 = float(xmin_1)
                                 ymin_1 = k[1]
+                                ymin_1 = float(ymin_1)
                                 xmax_1 = k[2]
+                                xmax_1 = float(xmax_1)
                                 ymax_1 = k[3]
+                                ymax_1 = float(ymax_1)
                                 class_id_1 = k[4]
                                 #print(xmin_1,ymin_1,xmax_1,ymax_1,class_id_1)
                                 xmin_2 = b[0]
+                                xmin_2 = float(xmin_2)
                                 ymin_2 = b[1]
+                                ymin_2 = float(ymin_2)
                                 xmax_2 = b[2]
+                                xmax_2 = float(xmax_2)
                                 ymax_2 = b[3]
+                                ymax_2 = float(ymax_2)
                                 class_id_2 = b[4]
                                 #print(xmin_2,ymin_2,xmax_2,ymax_2,class_id_2)
                                 num_of_classes = 2
                                 print(class_id_1, "and" ,class_id_2,end=' ')
                                 if class_id_1 == '0':
-                                    class_id_1 = '1'
+                                    class_id_1 = 1
                                     label_1 += 1
 
                                 elif class_id_1 == '1':
-                                    class_id_1 = '2'
+                                    class_id_1 = 2
                                     label_2 += 1
 
                                 elif class_id_1 == '2':
-                                    class_id_1 = '3'
+                                    class_id_1 = 3
                                     label_3 += 1
 
                                 elif class_id_1 == '3':
-                                    class_id_1 = '4'
+                                    class_id_1 = 4
                                     label_4 += 1
 
                                 elif class_id_1 == '4':
-                                    class_id_1 = '5'
+                                    class_id_1 = 5
                                     label_5 += 1
 
                                 elif class_id_1 == '5':
-                                    class_id_1 = '6'
+                                    class_id_1 = 6
                                     label_6 += 1
 
                                 elif class_id_1 == '6':
-                                    class_id_1 = '7'
+                                    class_id_1 = 7
                                     label_7 += 1
 
                                 elif class_id_1 == '7':
-                                    class_id_1 = '8'
+                                    class_id_1 = 8
                                     label_8 += 1
 
                                 elif class_id_1 == '8':
-                                    class_id_1 == '9'
+                                    class_id_1 == 9
                                     label_9 += 1
 
                                 elif class_id_1 == '9':
-                                    class_id_1== '10'
+                                    class_id_1== 10
                                     label_10 += 1
 #------------------------------------------- Chnage label 2 -----------------------------------
                                 if class_id_2 == '0':
-                                    class_id_2 = '1'
+                                    class_id_2 = 1
                                     label_1 += 1
 
                                 elif class_id_2 == '1':
-                                    class_id_2 = '2'
+                                    class_id_2 = 2
                                     label_2 += 1
 
                                 elif class_id_2 == '2':
-                                    class_id_2 = '3'
+                                    class_id_2 = 3
                                     label_3 += 1
 
                                 elif class_id_2 == '3':
-                                    class_id_2 = '4'
+                                    class_id_2 = 4
                                     label_4 += 1
 
                                 elif class_id_2 == '4':
-                                    class_id_2 = '5'
+                                    class_id_2 = 5
                                     label_5 += 1
 
                                 elif class_id_2 == '5':
-                                    class_id_2 = '6'
+                                    class_id_2 = 6
                                     label_6 += 1
 
                                 elif class_id_2 == '6':
-                                    class_id_2 = '7'
+                                    class_id_2 = 7
                                     label_7 += 1
 
                                 elif class_id_2 == '7':
-                                    class_id_2 = '8'
+                                    class_id_2 = 8
                                     label_8 += 1
 
                                 elif class_id_2 == '8':
-                                    class_id_2 = '9'
+                                    class_id_2 = 9
                                     label_9 += 1
 
                                 elif class_id_2 == '9':
-                                    class_id_2 = '10'
+                                    class_id_2 = 10
                                     label_10 += 1
 
                                 print('convert to ',class_id_1, 'and' ,class_id_2,'\n')
                                 #print(image_name_label,xmin,ymin,xmax,ymax,class_id_1,class_id_2)
-                                list_label.append(class_id_1+'.0')
-                                list_label.append(class_id_2+'.0')
-                                list_xmin.append(xmin_1+'.0')
-                                list_xmin.append(xmin_2+'.0')
-                                list_ymin.append(ymin_1+'.0')
-                                list_ymin.append(ymin_2+'.0')
-                                list_xmax.append(xmax_1+'.0')
-                                list_xmax.append(xmax_2+'.0')
-                                list_ymax.append(ymax_1+'.0')
-                                list_ymax.append(ymax_2+'.0')
-                                list_width.append(str(int(xmax_1)-int(xmin_1))+'.0')
-                                list_width.append(str(int(xmax_2)-int(xmin_2))+'.0')
-                                list_height.append(str(int(ymax_1)-int(ymin_1))+'.0')
-                                list_height.append(str(int(ymax_2)-int(ymin_2))+'.0')
+                                list_label.append(class_id_1)
+                                list_label.append(class_id_2)
+                                list_xmin.append(xmin_1)
+                                list_xmin.append(xmin_2)
+                                list_ymin.append(ymin_1)
+                                list_ymin.append(ymin_2)
+                                list_xmax.append(xmax_1)
+                                list_xmax.append(xmax_2)
+                                list_ymax.append(ymax_1)
+                                list_ymax.append(ymax_2)
+                                list_width.append(float(int(xmax_1)-int(xmin_1)))
+                                list_width.append(float(int(xmax_2)-int(xmin_2)))
+                                list_height.append(float(int(ymax_1)-int(ymin_1)))
+                                list_height.append(float(int(ymax_2)-int(ymin_2)))
 
                             # print("image_name_label",image_name_label)
                             # print("list_label",list_label)
