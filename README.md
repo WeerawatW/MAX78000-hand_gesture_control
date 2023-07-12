@@ -373,7 +373,7 @@ See https://analog-devices-msdk.github.io/msdk/USERGUIDE/#board-support-packages
 
 ## Circuit Diagram
 
-![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/fe8a0fe6-7b56-434b-b207-b5bd3855e348)
+![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/bd6bbcfe-719b-49fb-954c-02f5d4947fed)
 
 
 ## Conclusion
