@@ -1,4 +1,5 @@
 # The MAX78000 hand gesture control
+
 The main reference to the official warehouse of the board for training and deploying neural networks:`Github`
 
 ## Project Introduction
