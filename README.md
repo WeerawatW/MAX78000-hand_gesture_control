@@ -378,6 +378,5 @@ See https://analog-devices-msdk.github.io/msdk/USERGUIDE/#board-support-packages
 ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/bd6bbcfe-719b-49fb-954c-02f5d4947fed)
 
 
-## Conclusion
-----------------------------------------------
----------------------------------------------
+## Result
+Download this vedio [Project_Demo.mp4](https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/ProjectFile/Project_Demo.mp4) to see our project result.
