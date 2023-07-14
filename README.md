@@ -280,14 +280,13 @@ The setup below only needs to be done once per MSDK https://analog-devices-msdk.
 6. Add the entries below to your user settings.json file. Change the MAXIM_PATH option to point to the MSDK installation.
 <img src = "https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/a032b6ea-c7be-4ec2-9434-9f170f35746f" hegith ='480' width ='860'>
 
-For example, you might set "MAXIM_PATH":"C:/MaximSDK" on Windows, "MAXIM_PATH":"/home/username/MaximSDK" on Linux/MacOS, etc.
+  For example, you might set "MAXIM_PATH":"C:/MaximSDK" on Windows, "MAXIM_PATH":"/home/username/MaximSDK" on Linux/MacOS, etc.
 
 7. Save your changes to the file with CTRL + S and restart VS Code.
 
 ### Building and Running a Project (VS Code)
-1.After you get the generated file copy the folder_Numbers to the new folder.
-
-2. Copy all files from the finger_11classRV5.2_demo folder to the your folder_Numbers.
+1. After you get the generated file, copy the folder_Numbers to the new folder.
+  2. Copy all files from the finger_11classRV5.2_demo folder to the your folder_Numbers.
 
  ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/887ab695-18a3-47ab-ac35-f13a645ccf18)
 
@@ -370,6 +369,12 @@ See https://analog-devices-msdk.github.io/msdk/USERGUIDE/#board-support-packages
 
 
 ## MAX78000EVKIT Design Processing
+  
+  Name label according to class
+
+  ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/1e417812-4d26-42a5-8fbb-346edefaee71)
+
+  
   The UART send code is as follows:
 
 ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/5d68f3a3-2b24-4c96-a8ca-28ee88a49d8f)
