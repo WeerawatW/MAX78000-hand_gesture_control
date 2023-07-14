@@ -303,7 +303,7 @@ For example, you might set "MAXIM_PATH":"C:/MaximSDK" on Windows, "MAXIM_PATH":"
 
 3. Navigate to an example project for the target microcontroller in the Myproject folder and open it with Select Folder.
 
-![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/7d1f893e-f669-4584-825b-17bbc58f15f9)
+ ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/0c1c1088-eb69-495d-a6bb-a93164824ac4)
 
 4. VS Code will prompt for trust the first time. Select Trust folder and enable all features.
 
@@ -311,48 +311,52 @@ For example, you might set "MAXIM_PATH":"C:/MaximSDK" on Windows, "MAXIM_PATH":"
 
 5. The opened project should look something like this.
 
-![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/825dd949-35eb-4d26-9166-1e5bf787f093)
+ ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/855a9ccb-ff7c-4248-b730-2999fac0f717)
+
 6. Set the Board Support Package to match your evaluation platform. In VS Code, this is done by editing the .vscode/settings.json file and setting the "board" project configuration option.
 
 See https://analog-devices-msdk.github.io/msdk/USERGUIDE/#board-support-packages for more details.
 
-![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/11061013-0817-4a1f-8b66-2568eee0d01c)
+ ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/eb8ea4df-5b47-402b-85fa-c271a02cace3)
+
 
 7. Save your changes to settings.json with CTRL+S.
 8. Reload the VS Code window. After changing any options in settings.json, a reload is necessary to force it to re-index VS Code's Intellisense engine.
    VS Code can be conveniently reloaded with the Reload Window developer command accessed with CTRL + SHIFT + P (or COMMAND + SHIFT + P on MacOS).
    
-![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/9a828a90-3a37-4156-8d75-2ea5dc900d8e)
+ ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/9a828a90-3a37-4156-8d75-2ea5dc900d8e)
 
 9. Press the shortcut Ctrl+Shift+B to open the available Build Tasks (alternatively navigate to Terminal -> Run Build task...).
 
-![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/e5c88b96-3e88-4a9e-8a87-622371ae240d)
+ ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/e5c88b96-3e88-4a9e-8a87-622371ae240d)
 
 10. Run the "build" task to compile the project for the configured Target Microcontroller and BSP. Notice that the TARGET and BOARD Build Configuration Variables are set on the command line. The program binary is successfully compiled into the .elf program binary in the build sub-folder of the project.
 
-![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/4cbeebb6-5aae-4db2-a131-5a99d74d9c67)
+ ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/e4e93758-2d3c-4ad9-9866-3f5f2e9a3704)
+
 
 
 11. Connect a debug adapter between the host PC and the evaluation platform. Detailed instructions on this hardware setup can be found in the evaluation platform's Datasheet and Quick-Start Guide, which are available on its https://www.analog.com/en/index.html product page.
 12. Run the flash build task. Running this task will automatically build the project if needed, flash the program binary, and halt the program execution to await a debugger connection.
 
-![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/2a8a567a-ac7c-4ab9-bead-b7d7c1992695)
+ ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/5ae0452c-897e-4a63-a4a9-24ca2dafa408)
+
 
 
 13. Open the Run and Debug window (CTRL+SHIFT+D) and launch the debugger (F5).
 
-![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/e3483859-fc48-4351-9f87-28fd293e1acb)
+ ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/e3483859-fc48-4351-9f87-28fd293e1acb)
 
 14. Verify the program counter enters main successfully.
 
-![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/0c20bcf3-6c95-4a5d-9b49-3578b117c7c0)
+ ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/4d78e49a-b782-45b7-b7fc-55b4bf92a3fc)
 
      
 15. Press Continue (F5) to run the program.
 
-![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/1d5373c8-65a6-40e3-8839-b66c01078ab2)
+ ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/1d5373c8-65a6-40e3-8839-b66c01078ab2)
 
-![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/980c31ab-982d-49c5-8f43-b9fe77cc7035)
+ ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/980c31ab-982d-49c5-8f43-b9fe77cc7035)
 
 
 16. Exercise the debugger and press stop to disconnect when finished.
