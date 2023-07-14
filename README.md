@@ -286,7 +286,7 @@ The setup below only needs to be done once per MSDK https://analog-devices-msdk.
 
 ### Building and Running a Project (VS Code)
 1. After you get the generated file, copy the folder_Numbers to the new folder.
-  2. Copy all files from the finger_11classRV5.2_demo folder to the your folder_Numbers.
+  2. Copy all files from the finger_11classRV5.2_demo folder in Deployment to the your folder_Numbers.
 
  ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/887ab695-18a3-47ab-ac35-f13a645ccf18)
 
