@@ -390,3 +390,47 @@ See https://analog-devices-msdk.github.io/msdk/USERGUIDE/#board-support-packages
 
 ## Result
 Download this vedio [Project_Demo.mp4](https://github.com/WeerawatW/MAX78000-hand_gesture_control/releases/download/ProjectFile/Project_Demo.mp4) to see our project result.
+
+
+### Troubleshooting
+
+If you have warning like this, i find 3 way to fix that problem.
+
+![](https://github.com/WeerawatW/MAX78000-Custom-dataset/blob/a5ce02ac8d8ee4f70919ac54c34a2a6541a21aa3/custom_data_images/Ploblem.png)
+
+1) May be you have only 1 object in 1 images **you should have 2 object in 1 images** in your datasets.
+
+![](https://github.com/WeerawatW/MAX78000-Custom-dataset/blob/a5ce02ac8d8ee4f70919ac54c34a2a6541a21aa3/custom_data_images/Solution.png)
+
+2) Add more class 
+
+![](https://github.com/WeerawatW/MAX78000-Custom-dataset/blob/376890af7d8de822b37aba7ef63ab9bc9c57f450/custom_data_images/Solution1_2.png)
+
+3) Add more dataset
+ Maybe you don't have dataset enough try add more datasets, then wait to see the results..
+
+![](https://github.com/WeerawatW/MAX78000-Custom-dataset/blob/376890af7d8de822b37aba7ef63ab9bc9c57f450/custom_data_images/Result.png)
+
+If you have warning like this, i find 1 way to fix that problem.
+
+![](https://github.com/WeerawatW/MAX78000-Custom-dataset/blob/42f825daf75e022303de7b4f4c8b0b10a89c1daf/custom_data_images/problem2.png)
+
+1) Config yaml `output_shift:` more than -10 at layer 12,13 or warning layer. 
+
+![](https://github.com/WeerawatW/MAX78000-Custom-dataset/blob/42f825daf75e022303de7b4f4c8b0b10a89c1daf/custom_data_images/config_yaml.png)
+
+Then wait to see the results..
+
+![](https://github.com/WeerawatW/MAX78000-Custom-dataset/blob/42f825daf75e022303de7b4f4c8b0b10a89c1daf/custom_data_images/Result3.png)
+
+If you have warning like this, you forgot `quantization`.
+
+![](https://github.com/WeerawatW/MAX78000-Custom-dataset/blob/42f825daf75e022303de7b4f4c8b0b10a89c1daf/custom_data_images/Forgot%20quantization.png)
+
+1) You should do `quantization`
+
+![](https://github.com/WeerawatW/MAX78000-Custom-dataset/blob/42f825daf75e022303de7b4f4c8b0b10a89c1daf/custom_data_images/28.png)
+
+Then wait to see the results..
+
+![](https://github.com/WeerawatW/MAX78000-Custom-dataset/blob/33b17c75e7b176ef4f393a0f7183fce92b122c57/custom_data_images/35.png)
