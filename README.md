@@ -370,7 +370,8 @@ See https://analog-devices-msdk.github.io/msdk/USERGUIDE/#board-support-packages
 
 ## MAX78000EVKIT Design Processing
   
-  Name label according to class
+  Name label according to class:
+  You must to the name label matches the class dataset.
 
   ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/1e417812-4d26-42a5-8fbb-346edefaee71)
 
@@ -387,6 +388,7 @@ See https://analog-devices-msdk.github.io/msdk/USERGUIDE/#board-support-packages
   When the Arduino Nano board receives data from the Max78000EVKit, it will instruct the buzzer to sound and the infrared light to transmit a signal to the TV receiver. 
   
   ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/d3b21901-f476-437a-97fc-1c485abe659c)
+
 
   ![image](https://github.com/WeerawatW/MAX78000-hand_gesture_control/assets/136284844/722fe9e2-e5b7-4ef7-a77f-6eceef0d30d4)
 
