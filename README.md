@@ -158,6 +158,8 @@ The trained model will be saved in a directory with these files:`logs`
 ```
 The naxt step in this will be used `qat_best.pth.tar` but before use we must rename `qat_best.pth.tar` to `ai85-finger-numbers-qat8.pth.tar`.
 
+Note: you can get `qat_best.pth.tar` after train more than 25 epochs.
+
 ## 2) ai8x-synthesis
 Place `ai85-finger-numbers-qat8.pth.tar` in directory according to the following structure.
 ```
